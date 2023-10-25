@@ -134,30 +134,50 @@ html {
     margin-right:8px;
   }
 
-figure {
+  figure {
     display: grid;
     grid-template: 1fr / 1fr "stack";
+    position: relative;
 }
 
 figure > * {
     grid-area: stack;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-figure > img{
-    width: 10rem;
+figure > img {
+    width: 50rem;
     aspect-ratio: 16/9;
     object-fit: cover;
 }
 
-figure > figcaption{
+figure > figcaption {
     opacity: 0;
     visibility: hidden;
-    transition: 
-        opacity 400ms, visibility 0ms 400ms;
+    transition: opacity 400ms, visibility 0ms 400ms;
 }
 
-figure:hover > figcaption{
+
+figure:hover > figcaption {
     opacity: 1;
     visibility: visible;
-    transition: opacity 400ms;
+    transition: opacity 700ms;
+}
+.zoom-frame {
+  width: 500px; /* Définissez la largeur du cadre selon vos besoins */
+  overflow: hidden; /* Masque tout contenu dépassant du cadre */
+  transition: transform 0.3s; /* Ajoute une transition pour créer l'effet de zoom en douceur */
+}
+
+.zoom-frame img {
+  width: 100%; /* La largeur de l'image est égale à 100% de la largeur du cadre */
+  height: auto; /* Maintient le ratio d'aspect de l'image */
+  transition: transform 0.3s; /* Ajoute une transition à l'image pour créer l'effet de zoom */
+}
+
+.zoom-frame:hover img {
+  transform: scale(1.2); /* Agrandit l'image de 10% au survol */
 }
