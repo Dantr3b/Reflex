@@ -7,7 +7,7 @@ function updateEmailLink() {
                     "Cordialement " + name;
 
     var emailLink = document.getElementById("emailLink");
-    emailLink.href = "mailto:someone@example.com" +
+    emailLink.action = "mailto:someone@example.com" +
                      "?subject=" + encodeURIComponent(subject) +
                      "&body=" + encodeURIComponent(emailBody);
 }

@@ -8,7 +8,7 @@
   <script src="js/contact.js"></script>
 </head>
 <body>
-   <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+   <form name="myForm" id="emailLink" action="mailto:someone@example.com?subject=This%20is%20the%20subject&body=This%20is%20the%20body" onsubmit="return validateForm()" method="post">
       <table class="form-style">
          <tr>
             <td>
@@ -51,12 +51,11 @@
          <tr>
             <td></td>
             <td>
-               <a id="emailLink" href="mailto:someone@example.com?subject=This%20is%20the%20subject&body=This%20is%20the%20body">Send email</a>     
+               <button id="emailLink" onclick="sendEmail()">Send email</button>     
                <input type="reset" value="Réinitialiser"> 
             </td>
          </tr>
       </table>
    </form>
-
 </body>
 </html>
