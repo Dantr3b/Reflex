@@ -6,7 +6,7 @@ html {
     margin:0px;
   }
   body {
-    background-color: #59ff00;
+    background-color: #ffffff;
   }
   .container {
     width:1024px;
@@ -316,7 +316,7 @@ footer ul li{
   width: fit-content;
 }
 footer ul li:hover{
-  color: rgb(135, 239, 0);
+  color: rgb(255, 0, 0);
 }
 footer .help-sec{
   grid-column-start: 2;
