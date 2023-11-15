@@ -1,4 +1,4 @@
-<?php
+<?php>
 //mettez ici votre adresse mail
 //de préférence une adresse avec le même domaine de là où, vous utilisez ce code, cela permet un envoie quasi certain jusqu'au destinataire
 $votre_adresse_mail = 'gabin.rolllandbetrand@ynov.com';
