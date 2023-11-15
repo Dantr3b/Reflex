@@ -209,10 +209,18 @@ h1{
   color:red;
 }
 .form-style input[type=submit], .form-style input[type=reset]{
-  background: #4eb5f1;
-  padding: 8px 15px 8px 15px;
-  border: none;
-  color: #fff;
+    background-color: #ff0000; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espace à l'intérieur du bouton */
+    font-size: 16px; /* Taille du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de type pointer au survol */
+}
+
+/* Style pour le survol du bouton */
+.form-style input[type=submit], .form-style input[type=reset]:hover {
+    background-color: #ff0000; /* Couleur de fond au survol */
 }
 .form-style input[type=submit]:hover, .form-style input[type=reset]:hover{
   background: #4eb5f1;
@@ -359,5 +367,3 @@ form .g-inp{
 .form-style label{
   color: black;
 }
-
-.form-style  
