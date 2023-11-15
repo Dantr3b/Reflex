@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Reflex Pilot</title>
+  <header>
+  <center> <header><h1>Reflex Pilot</h1></header></center>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Slider Avant Après</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
 <body>
   <div class="container">
@@ -24,6 +26,108 @@
       <input class="slider__range" type="range" min="0" max="100" value="50"/>
     </div>
   </div>
-  <script src='main.js'></script>
+  <script src='js/main.js'></script>
+<div class="zoom-container">
+    <figure>
+        <img src="images/Ferrari.JPG" alt="Image à zoomer">
+        <figcaption>Overlay content</figcaption>
+    </figure>
+  </div>
+  <div class="zoom-frame">
+    <img src="images/im1.png" alt="Image à zoomer">
+</div>
+<h1>Formulaire de contact</h1>
+      <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                    Choisi le bail que tu veux frangin  <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <select>
+                     <option class="first" value="offre">---Choisir une offre---</option>
+                     <option value="logo">Photo moto </option>
+                     <option value="mascotte">photo voiture</option>
+                 </select>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+      <body>
+         <footer>
+             <div class="f-item-con">
+                 <div class="app-info">
+                     <span class='app-name'>
+                         <span class='app-initial'>R</span>eflex Pilote
+                     </span>
+                     <p>Service de photographie<strong> Moto</strong> et <strong>Auto</strong> </p>
+                 </div>
+                 <div class="useful-links">
+                     <div class="footer-title">liens qui peuvent servir</div>
+                     <ul>
+                         <li>A propos de nous</li>
+                         <li>Termes et conditions d'utilisations</li>
+                     </ul>
+                 </div>
+                 <div class="help-sec">
+                     <div class="footer-title">Aide</div>
+                     <ul>
+                         <li>Avertir d'un bug ou d'un problème </li>
+                     </ul>
+                 </div>
+                 <div class="réseau">
+                     <div class="footer-title">Nos réseaux sociaux</div>
+                     <ul>
+                         <li>A propos de nous</li>
+                         <li>Termes et conditions d'utilisations</li>
+                     </ul>
+                  </div>
+             </div>
+             <div class='cr-con'>Reflex Pilote</div>
+         </footer>
+     
+     </body>
 </body>
 </html>
