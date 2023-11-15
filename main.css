@@ -135,10 +135,11 @@ html {
   }
 
   figure {
+    width: 500px;
+    margin-left: 250px;
     display: grid;
     grid-template: 1fr / 1fr "stack";
-    position: relative;
-}
+    }
 
 figure > * {
     grid-area: stack;
