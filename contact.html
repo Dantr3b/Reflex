@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nous Contacter</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/contact.css'>
+  <script src="js/contact.js"></script>
+</head>
+<body>
+   <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+      <table class="form-style">
+         <tr>
+            <td>
+               <label for="NameInput">
+                  Votre nom <span class="required">*</span>
+               </label>
+            </td>
+            <td>
+               <input type="text" id="NameInput" oninput="updateEmailLink()">
+               <span class="error" id="errorname"></span>
+            </td>
+         </tr>
+         <tr>
+         </tr>
+         <tr>
+            <td>
+               <label for="SubjetInput">
+                 Choisissez le bail que vous voulez frangin  <span class="required">*</span>
+               </label>
+            </td>
+            <td>
+               <select id="SubjetInput" oninput="updateEmailLink()">
+                  <option class="first" value="offre">---Choisir une offre---</option>
+                  <option value="Photo moto">Photo moto </option>
+                  <option value="photo voiture">photo voiture</option>
+              </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <label for="bodyInput">
+                  Message <span class="required">*</span>
+               </label>
+            </td>
+            <td>
+               <textarea id="bodyInput" oninput="updateEmailLink()"></textarea>
+               <span class="error" id="errormsg"></span>
+            </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>
+               <a id="emailLink" href="mailto:someone@example.com?subject=This%20is%20the%20subject&body=This%20is%20the%20body">Send email</a>     
+               <input type="reset" value="Réinitialiser"> 
+            </td>
+         </tr>
+      </table>
+   </form>
+
+</body>
+</html>
