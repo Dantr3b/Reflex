@@ -1,3 +1,35 @@
 body{
     background:#3F3E3E;
 }
+
+.ford{
+    margin-top: 10%;
+    width: 100%;
+}
+
+
+.conteneur {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.texte-sur-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Couleur du texte, vous pouvez ajuster selon vos besoins */
+    font-size: 24px; /* Taille de la police, vous pouvez ajuster selon vos besoins */
+    text-align: center;
+}
+
+.texte-sur-image2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Couleur du texte, vous pouvez ajuster selon vos besoins */
+    font-size: 24px; /* Taille de la police, vous pouvez ajuster selon vos besoins */
+    text-align: center;
+}
