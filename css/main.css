@@ -438,7 +438,25 @@ form .g-inp{
 .carousel-item img {
   height: 500px; /* Réglez la hauteur souhaitée */
   object-fit: cover;
+} 
+#fullscreen-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
+#logo-img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
 .no-underline {
   text-decoration: none;
   color :black;
