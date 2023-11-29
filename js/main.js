@@ -96,3 +96,8 @@ function validateForm()
    
     return true; 
 }
+setTimeout(function() {
+    document.getElementById('fullscreen-logo').style.opacity = '0';
+    $('#home-page').removeClass('d-none');
+    $('#home-page').addClass('show');
+  }, 2000);
