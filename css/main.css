@@ -209,10 +209,10 @@ h1{
   font-weight: bold;
 }
 .form-style .required{
-  color:red;
+  color:#00DD44;
 }
 .form-style input[type=reset], button{
-    background-color: #ff0000; /* Couleur de fond */
+    background-color: #00DD44; /* Couleur de fond */
     color: white; /* Couleur du texte */
     padding: 10px 20px; /* Espace à l'intérieur du bouton */
     font-size: 16px; /* Taille du texte */
@@ -223,7 +223,7 @@ h1{
 
 /* Style pour le survol du bouton */
 .form-style input[type=submit], .form-style input[type=reset]:hover {
-    background-color: #ff0000; /* Couleur de fond au survol */
+    background-color: #00DD44; /* Couleur de fond au survol */
 }
 .form-style input[type=submit]:hover, .form-style input[type=reset]:hover{
   background: #4eb5f1;
@@ -273,7 +273,7 @@ textarea{
   text-decoration: none;
 }
 :root{
-  --theme-col: #ff0000;
+  --theme-col: #00DD44;
 }
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -327,7 +327,7 @@ footer ul li{
   width: fit-content;
 }
 footer ul li:hover{
-  color: rgb(255, 0, 0);
+  color: #00DD44;
 }
 footer .help-sec{
   grid-column-start: 2;
@@ -373,21 +373,4 @@ form .g-inp{
 .carousel-item img {
   height: 500px; /* Réglez la hauteur souhaitée */
   object-fit: cover;
-}
-#fullscreen-logo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  transition: opacity 1s ease;
-}
-#logo-img {
-  max-width: 50%;
-  max-height: 50%;
 }
