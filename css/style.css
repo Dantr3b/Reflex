@@ -1,3 +1,4 @@
+
 body{
     background:#3F3E3E;
 }
@@ -33,3 +34,32 @@ body{
     font-size: 24px; /* Taille de la police, vous pouvez ajuster selon vos besoins */
     text-align: center;
 }
+/* Styles CSS personnalisés pour l'effet de survol */
+
+.navbar-dark .navbar-nav {
+    margin-left: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Couleur blanche par défaut */
+    font-family: 'Nico Moji Prensnet';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 30px;
+}
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+    /* Ajoutez vos styles spécifiques pour la classe active ici */
+    color: #00ff00;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #00ff00; /* Couleur verte au survol */
+}
+
+h1 {
+    color: #00ff00; /* Couleur verte pour les titres h1 */
+}
+
