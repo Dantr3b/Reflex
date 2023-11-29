@@ -97,7 +97,6 @@ function validateForm()
     return true; 
 }
 setTimeout(function() {
-    document.getElementById('fullscreen-logo').style.opacity = '0';
-    $('#home-page').removeClass('d-none');
-    $('#home-page').addClass('show');
+    document.getElementById('fullscreen-logo').style.display = 'none';
+    document.getElementById('home-page').style.display = 'block';
   }, 2000);

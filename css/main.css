@@ -445,15 +445,13 @@ form .g-inp{
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #fff; /* Couleur de fond du logo */
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  transition: opacity 1s ease;
 }
 #logo-img {
-  max-width: 50%;
+  max-width: 50%; /* Ajustez la taille du logo selon vos besoins */
   max-height: 50%;
 }
 
