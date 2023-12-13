@@ -4,7 +4,8 @@ body{
 }
 
 .ford{
-    margin-top: 10%;
+    position: fixed;
+    margin-top: 5%;
     width: 100%;
 }
 
@@ -27,7 +28,7 @@ body{
 
 .texte-sur-image2 {
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; /* Couleur du texte, vous pouvez ajuster selon vos besoins */
@@ -37,19 +38,31 @@ body{
 /* Styles CSS personnalisés pour l'effet de survol */
 
 .navbar-dark .navbar-nav {
-    margin-left: 20px;
+    height: 5rem;
+    margin-left: 8%;
+    padding-left: 1.2rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff; /* Couleur blanche par défaut */
+<<<<<<< HEAD
     font-family:helvetica;
+=======
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+>>>>>>> 295396e4d8685812174a652b9e085e59deefdab3
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+<<<<<<< HEAD
     margin-right: 30px;
     margin-top: 30%;
+=======
+    margin-right: 3rem;
+    margin-top: 1rem;
+>>>>>>> 295396e4d8685812174a652b9e085e59deefdab3
 }
+
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
     /* Ajoutez vos styles spécifiques pour la classe active ici */
     color: #00ff00;
