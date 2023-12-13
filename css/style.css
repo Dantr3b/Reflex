@@ -50,8 +50,7 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-right: 3rem;
-    margin-top: 1rem;
+    margin-right: 4rem;
 }
 
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
@@ -69,5 +68,9 @@ h1 {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
 }
