@@ -42,12 +42,13 @@ body{
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff; /* Couleur blanche par défaut */
-    font-family: 'Nico Moji Prensnet';
+    font-family:helvetica;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-right: 30px;
+    margin-top: 30%;
 }
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
     /* Ajoutez vos styles spécifiques pour la classe active ici */
@@ -62,4 +63,3 @@ body{
 h1 {
     color: #00ff00; /* Couleur verte pour les titres h1 */
 }
-
