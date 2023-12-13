@@ -4,9 +4,10 @@ body{
 }
 
 .ford{
-    position: fixed;
+    position: absolute;
     margin-top: 5%;
     width: 100%;
+    z-index: 0;
 }
 
 
@@ -73,4 +74,9 @@ section {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+}
+
+.arow{
+    position: absolute;
+    z-index: 1;
 }
