@@ -17,3 +17,24 @@ function handleScroll() {
 
 // Ajoutez un écouteur d'événement de défilement
 window.addEventListener('scroll', handleScroll);
+
+function toggleVisibility(vehicle) {
+    // Sélectionne tous les paragraphes dans les deux divs
+    var titlemoto=document.querySelector('.title .moto h1');
+    var titlevoiture=document.querySelector('.title .voiture h1');
+    var paragraphsMoto = document.querySelector('.motocontent');
+    var paragraphsVoiture = document.querySelector('.voiturecontent');
+
+    // Vérifie quelle div a été cliquée et ajuste la visibilité des paragraphes en conséquence
+    if (vehicle === 'moto') {
+        titlemoto.style.color = 'red';
+        titlevoiture.style.color = 'white';
+        paragraphsMoto.style.display = 'block'; // Affiche le paragraphe de la moto
+        paragraphsVoiture.style.display = 'none'; // Cache le paragraphe de la voiture
+    } else if (vehicle === 'voiture') {
+        titlevoiture.style.color = 'red';
+        titlemoto.style.color = 'white';
+        paragraphsMoto.style.display = 'none'; // Cache le paragraphe de la moto
+        paragraphsVoiture.style.display = 'block'; // Affiche le paragraphe de la voiture
+    }
+}

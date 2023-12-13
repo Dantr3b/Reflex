@@ -24,7 +24,6 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.822);
     background: 0.5;
     z-index: 1000;
 }
@@ -84,3 +83,9 @@ section {
     font-size: 500%;
     color: #fff;
 }
+
+.moto .motocontent,
+.voiture .voiturecontent {
+    display: none; /* Par défaut, cache tous les paragraphes */
+}
+
