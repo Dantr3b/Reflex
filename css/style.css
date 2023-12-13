@@ -46,7 +46,7 @@ body{
 .navbar-dark .navbar-nav .nav-link {
     color: #fff; /* Couleur blanche par défaut */
     font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
