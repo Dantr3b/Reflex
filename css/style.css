@@ -14,6 +14,7 @@ body{
     position: relative;
     display: inline-block;
     width: 100%;
+    align-items: center;
 }
 
 .texte-sur-image {
@@ -38,11 +39,10 @@ body{
 /* Styles CSS personnalisés pour l'effet de survol */
 
 .navbar-dark .navbar-nav {
-
     height: 5rem;
-    margin-left: 8%;
-    padding-left: 1.2rem;
-}
+    justify-content: center;
+    align-items: center;
+}   
 
 .navbar-dark .navbar-nav .nav-link {
     color: #fff; /* Couleur blanche par défaut */
@@ -69,3 +69,6 @@ h1 {
     color: #00ff00; /* Couleur verte pour les titres h1 */
 }
 
+section {
+    margin: 0 auto;
+}
