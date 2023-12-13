@@ -72,7 +72,7 @@ section {
     position: relative;
     margin-top: 10%;
     z-index: 1;
-    left: 50%;
+    left: 45%;
     width: 15%;
 }
 
@@ -84,8 +84,32 @@ section {
     color: #fff;
 }
 
-.moto .motocontent,
-.voiture .voiturecontent {
+.title .moto h1{
+    color: #ffffff;
+    border-bottom: #00ff00 solid 0.8rem;
+    border-radius: 2%;
+}
+
+.title .voiture h1{
+    color: #ffffff;
+    border-radius: 2%;
+}
+
+
+.voiturecontent {
     display: none; /* Par défaut, cache tous les paragraphes */
 }
 
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding-left: 20%;
+    margin-right: 20%;
+    
+}
+
+.title h1{
+    cursor: pointer;
+}

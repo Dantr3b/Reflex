@@ -27,13 +27,17 @@ function toggleVisibility(vehicle) {
 
     // Vérifie quelle div a été cliquée et ajuste la visibilité des paragraphes en conséquence
     if (vehicle === 'moto') {
-        titlemoto.style.color = 'red';
-        titlevoiture.style.color = 'white';
+        titlemoto.style.color = 'white';
+        titlevoiture.style.color = '#909090';
+        titlemoto.style.borderBottom = '#00ff00 solid 0.8rem';
+        titlevoiture.style.borderBottom = 'none';
         paragraphsMoto.style.display = 'block'; // Affiche le paragraphe de la moto
         paragraphsVoiture.style.display = 'none'; // Cache le paragraphe de la voiture
     } else if (vehicle === 'voiture') {
-        titlevoiture.style.color = 'red';
-        titlemoto.style.color = 'white';
+        titlevoiture.style.color = 'white';
+        titlemoto.style.color = '#909090';
+        titlemoto.style.borderBottom = 'none';
+        titlevoiture.style.borderBottom = '#00ff00 solid 0.8rem';
         paragraphsMoto.style.display = 'none'; // Cache le paragraphe de la moto
         paragraphsVoiture.style.display = 'block'; // Affiche le paragraphe de la voiture
     }
