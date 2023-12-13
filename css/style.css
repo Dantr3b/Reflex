@@ -95,6 +95,20 @@ section {
     border-radius: 2%;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales par ligne */
+    gap: 10px; /* Espacement entre les images */
+    max-width: 800px; /* Largeur maximale de la grille */
+    margin: 20px auto; /* Centre la grille dans la page */
+}
+
+img {
+    width: 100%; /* Les images remplissent la largeur de la colonne */
+    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
+    border-radius: 8px; /* Ajoute un léger arrondi aux coins des images */
+}
+
 
 .voiturecontent {
     display: none; /* Par défaut, cache tous les paragraphes */
