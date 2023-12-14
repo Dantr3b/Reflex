@@ -9,7 +9,6 @@ body{
     z-index: 0;
 }
 
-
 .conteneur {
     position: relative;
     display: inline-block;
@@ -60,7 +59,7 @@ h1 {
     color: #00ff00; /* Couleur verte pour les titres h1 */
 }
 
-section {
+nav section{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,6 +73,15 @@ section {
     z-index: 1;
     left: 45%;
     width: 15%;
+}
+
+.h{
+    height: 100vh;
+    padding: 20px;
+}
+.g{
+    height: 100vh;
+    padding: 20px;
 }
 
 .titremoto{
@@ -118,7 +126,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
+    color: #ffffff;
     padding-left: 20%;
     margin-right: 20%;
     

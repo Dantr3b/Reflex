@@ -42,3 +42,30 @@ function toggleVisibility(vehicle) {
         paragraphsVoiture.style.display = 'block'; // Affiche le paragraphe de la voiture
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section');
+
+    window.addEventListener('scroll', function () {
+        let current = '';
+        
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (window.pageYOffset+50 >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                current = section.id;
+            }
+        });
+        
+
+        document.querySelectorAll('nav a').forEach(a => {
+            a.style.color = 'white';
+            if (a.getAttribute('href').slice(1) === current) {
+                a.style.color = '#00ff00';
+                console.log(a);
+            }
+        });
+    });
+});
