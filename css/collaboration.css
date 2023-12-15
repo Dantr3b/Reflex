@@ -1,0 +1,106 @@
+body {
+    font-family:Arial, Helvetica, sans-serif; /* Utilisation de la police personnalisée */
+    background-color: #3F3E3E;
+    overflow-x: hidden;
+}
+
+/* Style pour la barre de navigation sombre */
+.navbar-dark {
+    position: relative;
+    z-index: 0;
+}
+
+/* Style pour la barre de navigation sombre fixée en haut */
+.navbar-dark.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styles CSS personnalisés pour l'effet de survol de la barre de navigation */
+.navbar-dark .navbar-nav {
+    position: relative;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+}   
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Couleur blanche par défaut */
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 4rem;
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+    /* Styles spécifiques pour la classe active ici */
+    color: #0D4;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #0D4; /* Couleur verte au survol */
+}
+
+/* Style pour la classe '.colab' qui encapsule le contenu d'une colabalité */
+.colab {
+    display: flex; /* Utilisation de flexbox pour organiser les éléments en ligne */
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    border-radius: 10px; /* Coins arrondis */
+    color: white; /* Couleur du texte */
+    font-size: 1.8rem; /* Taille de la police */
+    z-index: 1; /* Empilement en avant pour être au-dessus d'autres éléments si nécessaire */
+}
+
+/* Style pour les images à l'intérieur de la classe '.colab' */
+.colab img {
+    width: 50%; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+    z-index: 1; /* Empilement en avant pour être au-dessus d'autres éléments si nécessaire */
+    margin-left: 3%; /* Marge à gauche de l'image */
+    margin-top: 3%; /* Marge en haut de l'image */
+}
+
+/* Style pour les titres h1 à l'intérieur de la classe '.colab' */
+.colab h1 {
+    color: #0D4; /* Couleur verte pour le titre */
+    font-size: 2.5rem; /* Taille de la police du titre */
+}
+
+/* Style pour la classe '.texte' à l'intérieur de la classe '.colab' */
+.colab .texte {
+    margin-top: 8%; /* Marge en haut du texte */
+    margin-left: 10%; /* Marge à gauche du texte */
+    color: white; /* Couleur du texte */
+    size: 2rem; /* Taille du texte (note: devrait probablement être 'font-size' au lieu de 'size') */
+    z-index: 2;
+}
+
+/* Style pour la classe '.form1' */
+.form1 {
+    position: absolute; /* Position absolue par rapport à son premier parent positionné */
+    z-index: 1; /* Empilement en avant pour être au-dessus d'autres éléments */
+    top: 20%; /* Distance par rapport au haut de l'écran */
+}
+
+/* Style pour la classe '.form2' */
+.form2 {
+    position: absolute; /* Position absolue par rapport à son premier parent positionné */
+    z-index: 1; /* Empilement en avant pour être au-dessus d'autres éléments */
+    left: 87%; /* Distance par rapport à la gauche de l'écran */
+    top: -0%; /* Distance par rapport au haut de l'écran (peut être ajusté selon les besoins) */
+}
+
+/* Style pour la classe '.form3' */
+.form3 {
+    position: absolute; /* Position absolue par rapport à son premier parent positionné */
+    z-index: 1; /* Empilement en avant pour être au-dessus d'autres éléments */
+    top: 177%; /* Distance par rapport au haut de l'écran (peut être ajusté selon les besoins) */
+    left: 40%; /* Distance par rapport à la gauche de l'écran (peut être ajusté selon les besoins) */
+}
