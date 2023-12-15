@@ -1,35 +1,42 @@
-
-body{
-    background:#3F3E3E;
+/* Style pour le fond du corps de la page */
+body {
+    background: #3F3E3E;
 }
 
-.ford{
+/* Style pour l'image de la voiture */
+.ford {
     position: relative;
     width: 100%;
     z-index: 0;
 }
 
-
+/* Style pour le conteneur avec l'image en arrière-plan */
 .conteneur {
     position: relative;
     display: inline-block;
     width: 100%;
     align-items: center;
 }
-.navbar-dark{
+
+/* Style pour la barre de navigation sombre */
+.navbar-dark {
     position: relative;
 }
 
-.navbar-dark.fixed{
+/* Style pour la barre de navigation sombre fixée en haut */
+.navbar-dark.fixed {
     position: fixed;
     top: 0;
     width: 100%;
+<<<<<<< HEAD
     background-color: rgba(255, 255, 255, 0.822);
     background: 0.5;
+=======
+>>>>>>> c2260c67cd3087a851813ee229aff1b84e54c307
     z-index: 1000;
 }
 
-/* Styles CSS personnalisés pour l'effet de survol */
+/* Styles CSS personnalisés pour l'effet de survol de la barre de navigation */
 .navbar-dark .navbar-nav {
     position: relative;
     height: 5rem;
@@ -48,22 +55,43 @@ body{
 }
 
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
-    /* Ajoutez vos styles spécifiques pour la classe active ici */
-    color: #00ff00;
+    /* Styles spécifiques pour la classe active ici */
+    color: #0D4;
 }
-
 
 .navbar-dark .navbar-nav .nav-link:hover {
+<<<<<<< HEAD
     color: #00ff00; /* Couleur verte au survol */
     color: #00ff00; 
+=======
+    color: #0D4; /* Couleur verte au survol */
+>>>>>>> c2260c67cd3087a851813ee229aff1b84e54c307
 }
 
+/* Style pour les titres h1 */
 h1 {
+<<<<<<< HEAD
     color: #00ff00; /* Couleur verte pour les titres h1 */
     color: #00ff00; 
 }
 
 section {
+=======
+    color: #0D4; /* Couleur verte pour les titres h1 */
+}
+
+/* Style pour les sections de navigation */
+nav section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Style pour la flèche vers le bas */
+.arow {
+>>>>>>> c2260c67cd3087a851813ee229aff1b84e54c307
     position: relative;
     margin-top: 10%;
     z-index: 1;
@@ -72,52 +100,78 @@ section {
     width: 15%;
 }
 
+<<<<<<< HEAD
 section {
+=======
+/* Style pour les sections "h" et "g" avec une hauteur de 100vh et un padding de 20px */
+.h {
+    height: 100vh;
+    padding: 20px;
+}
+
+.g {
+    height: 100vh;
+    padding: 20px;
+}
+
+.title{
+    margin-top: 10%;
+}
+
+/* Style pour les titres des catégories (moto et voiture) */
+.titremoto {
+    display: flex;
+    align-items: center;
+>>>>>>> c2260c67cd3087a851813ee229aff1b84e54c307
     justify-content: center;
     font-size: 500%;
     color: #fff;
 }
 
-.title .moto h1{
+/* Style pour les titres des sections "moto" et "voiture" avec un bordure inférieure */
+.title .moto h1 {
     color: #ffffff;
-    border-bottom: #00ff00 solid 0.8rem;
+    border-bottom: #0D4 solid 0.8rem;
     border-radius: 2%;
 }
 
-.title .voiture h1{
+.title .voiture h1 {
     color: #ffffff;
     border-radius: 2%;
 }
 
+/* Style pour la grille d'images */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales par ligne */
-    gap: 10px; /* Espacement entre les images */
-    max-width: 800px; /* Largeur maximale de la grille */
+    gap: 3rem; /* Espacement entre les images */
+    max-width: 90%; /* Largeur maximale de la grille */
     margin: 20px auto; /* Centre la grille dans la page */
 }
 
+/* Style pour les images avec une largeur de 100% et des coins arrondis */
 img {
-    width: 100%; /* Les images remplissent la largeur de la colonne */
-    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
-    border-radius: 8px; /* Ajoute un léger arrondi aux coins des images */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-
+/* Style pour le contenu de la catégorie "voiture" caché par défaut */
 .voiturecontent {
-    display: none; /* Par défaut, cache tous les paragraphes */
+    display: none;
 }
 
+/* Style pour la section "title" avec un espacement et un alignement spécifiques */
 .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
+    color: #ffffff;
     padding-left: 20%;
     margin-right: 20%;
-    
 }
 
-.title h1{
+/* Style pour les titres h1 avec un curseur pointeur */
+.title h1 {
     cursor: pointer;
 }
