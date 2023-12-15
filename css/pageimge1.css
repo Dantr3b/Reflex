@@ -1,0 +1,54 @@
+/* Style pour le corps du document */
+body {
+    font-family: 'Nico Moji Prensnet', sans-serif; /* Utilisation de la police personnalisée */
+}
+
+/* Section de la barre de navigation */
+#nav-bar {
+    padding-top: 70px; /* Ajout de marge en haut pour éviter le chevauchement avec la barre de navigation fixée en haut */
+}
+
+/* Style pour la barre de navigation */
+.navbar {
+    background-color: #3F3E3E; /* Couleur de fond de la barre de navigation */
+}
+
+/* Style pour les liens de la barre de navigation */
+.navbar-nav .nav-link {
+    color: white; /* Couleur du texte des liens */
+}
+
+/* Style pour le titre de la page */
+.title {
+    text-align: center; /* Centrage du texte */
+}
+
+/* Style pour le contenu principal */
+.main {
+    display: flex; /* Utilisation de flexbox pour aligner l'image et le texte horizontalement */
+    align-items: center; /* Centrage vertical */
+}
+
+/* Style pour l'image dans le contenu principal */
+.main img {
+    margin-right: 10px; /* Marge à droite de l'image pour l'espacement */
+}
+
+/* Style pour le texte dans le contenu principal */
+.main a.txt {
+    text-decoration: none; /* Suppression du soulignement du texte du lien */
+    flex-shrink: 0; /* Empêche le texte de se réduire pour s'adapter à la taille de la balise */
+}
+
+/* Style pour la section des hashtags */
+.hashtag {
+    display: flex; /* Utilisation de flexbox pour aligner les hashtags horizontalement */
+    flex-wrap: wrap; /* Permet aux hashtags de passer à la ligne s'ils ne rentrent pas */
+}
+
+/* Style pour chaque hashtag */
+.hashtag a {
+    margin-right: 5px; /* Marge à droite de chaque hashtag pour l'espacement */
+    color: #3F3E3E; /* Couleur du texte des hashtags */
+    text-decoration: none; /* Suppression du soulignement du texte du lien */
+}

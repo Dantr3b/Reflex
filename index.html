@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Déclaration de l'encodage des caractères -->
     <meta charset="UTF-8">
+    
+    <!-- Méta-balise pour la responsivité du viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Liens vers les fichiers CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Titre de la page -->
     <title>Reflex Pilot</title>
+    
+    <!-- Déclaration de la police personnalisée avec @font-face -->
     <style>
         @font-face {
             font-family: 'Nico Moji Prensnet';
@@ -15,96 +24,94 @@
 </head>
 <body>
 
-
+<!-- Section d'en-tête (navigation) -->
 <section id="h"> 
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:#3F3E3E ;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">    
+                    <a class="nav-link" aria-current="page" href="#h">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#g">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#a">Actualité</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#a">Collaboration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#a">Rasso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#a">Contacte</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:#3F3E3E ;">
-
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-        <li class="nav-item active">    
-            <a class="nav-link" aria-current="page" href="#h">Accueil</a>
-        </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#g">Galerie</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#a">Actualité</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#a">Collaboration</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#a">Rasso</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#a">Contacte</a>
-    </li>
-    </ul>
-    
-</div>
-</nav>
-
-
-<div class="conteneur">
-    <img src="images/test2.png" alt="Description de l'image" class="ford">
-    <!-- <p class="texte-sur-image">Reflex</p> -->
-    <!-- <p class="texte-sur-image2">Pilot</p> -->
-</div>
+    <!-- Conteneur avec une image en arrière-plan -->
+    <div class="conteneur">
+        <img src="images/test2.png" alt="Description de l'image" class="ford">
+        <!-- <p class="texte-sur-image">Reflex</p> -->
+        <!-- <p class="texte-sur-image2">Pilot</p> -->
+    </div>
 </section>
+
+<!-- Section de la galerie (moto et voiture) -->
 <section id="g">
-<div class="arow" >
-<svg xmlns="http://www.w3.org/2000/svg" width="77" height="48" viewBox="0 0 77 48" fill="none">
-    <path d="M9.0475 0L38.5 29.668L67.9525 0L77 9.1336L38.5 48L0 9.1336L9.0475 0Z" fill="white"/>
-    </svg>
-</div>
-
-
-<div class="title">
-
-    <div class="moto">
-        <h1 class="titremoto" onclick="toggleVisibility('moto')">Moto</h1>
-        
+    <!-- Flèche vers le bas -->
+    <div class="arow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="48" viewBox="0 0 77 48" fill="none">
+            <path d="M9.0475 0L38.5 29.668L67.9525 0L77 9.1336L38.5 48L0 9.1336L9.0475 0Z" fill="white"/>
+        </svg>
     </div>
-    <div class="voiture">  
-        <h1 class="titremoto" onclick="toggleVisibility('voiture')">Voiture</h1>
-        
-    </div>
-</div>
 
-<div class="motocontent">
-    <div class="image-grid">
-        <img src="images/Ferrari.JPG" alt="Image 1">
-        <img src="images/im1.png" alt="Image 2">
-        <img src="images/im2.png" alt="Image 3">
-        <img src="images/Mustang.JPG" alt="Image 4">
-        <img src="images/tokyo_light_off.jpg" alt="Image 5">
-        <img src="images/tokyo_light_on.jpg" alt="Image 6">
+    <!-- Titre avec deux catégories (Moto et Voiture) -->
+    <div class="title">
+        <div class="moto">
+            <h1 class="titremoto" onclick="toggleVisibility('moto')">Moto</h1>
+        </div>
+        <div class="voiture">  
+            <h1 class="titremoto" onclick="toggleVisibility('voiture')">Voiture</h1>
+        </div>
     </div>
-</div>
 
-<div class="voiturecontent">
-    <div class="image-grid">
-        <img src="image1.jpg" alt="Image 1">
-        <img src="image2.jpg" alt="Image 2">
-        <img src="image3.jpg" alt="Image 3">
-        <img src="image4.jpg" alt="Image 4">
-        <img src="image5.jpg" alt="Image 5">
-        <img src="image6.jpg" alt="Image 6">
+    <!-- Contenu pour la catégorie "Moto" -->
+    <div class="motocontent">
+        <div class="image-grid">
+            <img src="images/moto1.jpg" alt="Image 1">
+            <img src="images/moto2.jpg" alt="Image 2">
+            <img src="images/moto3.jpg" alt="Image 3">
+            <img src="images/moto4.jpg" alt="Image 4">
+            <img src="images/moto5.jpg" alt="Image 5">
+            <img src="images/moto6.jpg" alt="Image 6">
+        </div>
     </div>
-</div>
 
+    <!-- Contenu pour la catégorie "Voiture" -->
+    <div class="voiturecontent">
+        <div class="image-grid">
+            <!-- Lien vers une autre page pour la première image -->
+            <a href="pageimg1.html"><img src="images/voiture-1.jpg" alt="Image 1"></a>
+            <img src="images/voiture-2.jpg" alt="Image 2">
+            <img src="images/voiture-3.jpg" alt="Image 3">
+            <img src="images/voiture-4.jpg" alt="Image 4">
+            <img src="images/voiture-5.jpg" alt="Image 5">
+            <img src="images/voiture-6.jpg" alt="Image 6">
+        </div>
+    </div>
 </section>
 
+<!-- Scripts JavaScript et bibliothèques externes -->
 <script src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-
-
 </body>
-</html> 
+</html>

@@ -43,28 +43,41 @@ function toggleVisibility(vehicle) {
     }
 }
 
+// Attendez que le document HTML soit entièrement chargé
 document.addEventListener('DOMContentLoaded', function () {
+    
+    // Sélectionnez toutes les balises 'section' dans le document
     const sections = document.querySelectorAll('section');
 
+    // Ajoutez un écouteur d'événements de défilement à la fenêtre
     window.addEventListener('scroll', function () {
+        
+        // Initialisez une variable pour stocker l'ID de la section actuelle
         let current = '';
         
-
+        // Parcourez toutes les sections du document
         sections.forEach(section => {
+            
+            // Obtenez la position en haut de la section
             const sectionTop = section.offsetTop;
+            
+            // Obtenez la hauteur de la section
             const sectionHeight = section.clientHeight;
 
-            if (window.pageYOffset+50 >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+            // Vérifiez si la fenêtre défile à l'intérieur de la section
+            if (window.pageYOffset + 50 >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
                 current = section.id;
             }
         });
         
-
+        // Mettez à jour la couleur des liens de navigation en fonction de la section actuelle
         document.querySelectorAll('nav a').forEach(a => {
+            // Réinitialisez la couleur à blanc pour tous les liens de navigation
             a.style.color = 'white';
+
+            // Si l'ID de la section correspond à l'attribut 'href' du lien, mettez à jour la couleur
             if (a.getAttribute('href').slice(1) === current) {
-                a.style.color = '#00ff00';
-                console.log(a);
+                a.style.color = '#00ff00'; // Couleur verte pour la section actuelle
             }
         });
     });
