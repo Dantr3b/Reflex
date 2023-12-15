@@ -51,16 +51,16 @@ body {
 
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
     /* Styles spécifiques pour la classe active ici */
-    color: #00ff00;
+    color: #0D4;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #00ff00; /* Couleur verte au survol */
+    color: #0D4; /* Couleur verte au survol */
 }
 
 /* Style pour les titres h1 */
 h1 {
-    color: #00ff00; /* Couleur verte pour les titres h1 */
+    color: #0D4; /* Couleur verte pour les titres h1 */
 }
 
 /* Style pour les sections de navigation */
@@ -108,7 +108,7 @@ nav section {
 /* Style pour les titres des sections "moto" et "voiture" avec un bordure inférieure */
 .title .moto h1 {
     color: #ffffff;
-    border-bottom: #00ff00 solid 0.8rem;
+    border-bottom: #0D4 solid 0.8rem;
     border-radius: 2%;
 }
 

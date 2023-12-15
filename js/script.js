@@ -29,7 +29,7 @@ function toggleVisibility(vehicle) {
     if (vehicle === 'moto') {
         titlemoto.style.color = 'white';
         titlevoiture.style.color = '#909090';
-        titlemoto.style.borderBottom = '#00ff00 solid 0.8rem';
+        titlemoto.style.borderBottom = '#0D4 solid 0.8rem';
         titlevoiture.style.borderBottom = 'none';
         paragraphsMoto.style.display = 'block'; // Affiche le paragraphe de la moto
         paragraphsVoiture.style.display = 'none'; // Cache le paragraphe de la voiture
@@ -37,7 +37,7 @@ function toggleVisibility(vehicle) {
         titlevoiture.style.color = 'white';
         titlemoto.style.color = '#909090';
         titlemoto.style.borderBottom = 'none';
-        titlevoiture.style.borderBottom = '#00ff00 solid 0.8rem';
+        titlevoiture.style.borderBottom = '#0D4 solid 0.8rem';
         paragraphsMoto.style.display = 'none'; // Cache le paragraphe de la moto
         paragraphsVoiture.style.display = 'block'; // Affiche le paragraphe de la voiture
     }

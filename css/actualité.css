@@ -1,0 +1,91 @@
+body {
+    font-family:Arial, Helvetica, sans-serif; /* Utilisation de la police personnalisée */
+    background-color: #3F3E3E;
+}
+
+/* Style pour la barre de navigation sombre */
+.navbar-dark {
+    position: relative;
+}
+
+/* Style pour la barre de navigation sombre fixée en haut */
+.navbar-dark.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styles CSS personnalisés pour l'effet de survol de la barre de navigation */
+.navbar-dark .navbar-nav {
+    position: relative;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+}   
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Couleur blanche par défaut */
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 4rem;
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+    /* Styles spécifiques pour la classe active ici */
+    color: #0D4;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #0D4; /* Couleur verte au survol */
+}
+
+
+
+/* Style pour la classe '.actu' qui encapsule le contenu d'une actualité */
+.actu {
+    display: flex; /* Utilisation de flexbox pour organiser les éléments en ligne */
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    border-radius: 10px; /* Coins arrondis */
+    color: white; /* Couleur du texte */
+    font-size: 1.8rem; /* Taille de la police */
+}
+
+/* Style pour les images à l'intérieur de la classe '.actu' */
+.actu img {
+    width: 50%; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique pour maintenir les proportions */
+    z-index: 1; /* Empilement en avant pour être au-dessus d'autres éléments si nécessaire */
+    margin-left: 3%; /* Marge à gauche de l'image */
+    margin-top: 3%; /* Marge en haut de l'image */
+}
+
+/* Style pour les titres h1 à l'intérieur de la classe '.actu' */
+.actu h1 {
+    color: #0D4; /* Couleur verte pour le titre */
+    font-size: 2.5rem; /* Taille de la police du titre */
+}
+
+/* Style pour la classe '.texte' à l'intérieur de la classe '.actu' */
+.actu .texte {
+    margin-top: 8%; /* Marge en haut du texte */
+    margin-left: 10%; /* Marge à gauche du texte */
+    color: white; /* Couleur du texte */
+    size: 2rem; /* Taille du texte (note: devrait probablement être 'font-size' au lieu de 'size') */
+}
+
+/* Style pour la classe '.carre' */
+.carre {
+    display: block; /* Affichage en tant que bloc */
+    position: absolute; /* Position absolue par rapport à son premier parent positionné */
+    width: 45%; /* Largeur du carré */
+    height: 65%; /* Hauteur du carré */
+    background-color: #0D4; /* Couleur de fond du carré (vert dans cet exemple) */
+    z-index: 0; /* Empilement en arrière pour être derrière d'autres éléments */
+}
