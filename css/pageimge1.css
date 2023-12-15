@@ -1,54 +1,93 @@
 /* Style pour le corps du document */
 body {
-    font-family: 'Nico Moji Prensnet', sans-serif; /* Utilisation de la police personnalisée */
+    font-family:Arial, Helvetica, sans-serif; /* Utilisation de la police personnalisée */
+    background-color: #3F3E3E;
 }
 
-/* Section de la barre de navigation */
-#nav-bar {
-    padding-top: 70px; /* Ajout de marge en haut pour éviter le chevauchement avec la barre de navigation fixée en haut */
+/* Style pour la barre de navigation sombre */
+.navbar-dark {
+    position: relative;
 }
 
-/* Style pour la barre de navigation */
-.navbar {
-    background-color: #3F3E3E; /* Couleur de fond de la barre de navigation */
+/* Style pour la barre de navigation sombre fixée en haut */
+.navbar-dark.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-/* Style pour les liens de la barre de navigation */
-.navbar-nav .nav-link {
-    color: white; /* Couleur du texte des liens */
+/* Styles CSS personnalisés pour l'effet de survol de la barre de navigation */
+.navbar-dark .navbar-nav {
+    position: relative;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+}   
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Couleur blanche par défaut */
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 4rem;
 }
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+    /* Styles spécifiques pour la classe active ici */
+    color: #00ff00;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #00ff00; /* Couleur verte au survol */
+}
+
 
 /* Style pour le titre de la page */
-.title {
+.title h1 {
+    margin-top: 5%;
     text-align: center; /* Centrage du texte */
+    size: 10rem; 
+    color: #fff; /* Couleur blanche */
 }
 
 /* Style pour le contenu principal */
 .main {
     display: flex; /* Utilisation de flexbox pour aligner l'image et le texte horizontalement */
     align-items: center; /* Centrage vertical */
+    font-size: 2rem;
+    color: #fff; /* Couleur blanche */
 }
 
 /* Style pour l'image dans le contenu principal */
 .main img {
     margin-right: 10px; /* Marge à droite de l'image pour l'espacement */
+    width: 60%; /* Largeur de l'image */
 }
 
 /* Style pour le texte dans le contenu principal */
 .main a.txt {
     text-decoration: none; /* Suppression du soulignement du texte du lien */
     flex-shrink: 0; /* Empêche le texte de se réduire pour s'adapter à la taille de la balise */
+    width: 35%;
+    
 }
 
 /* Style pour la section des hashtags */
 .hashtag {
     display: flex; /* Utilisation de flexbox pour aligner les hashtags horizontalement */
     flex-wrap: wrap; /* Permet aux hashtags de passer à la ligne s'ils ne rentrent pas */
+    color: #fff; /* Couleur blanche */
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 /* Style pour chaque hashtag */
 .hashtag a {
-    margin-right: 5px; /* Marge à droite de chaque hashtag pour l'espacement */
-    color: #3F3E3E; /* Couleur du texte des hashtags */
+    margin-top: 2rem;
+    margin-right: 8rem; /* Marge à droite de chaque hashtag pour l'espacement */
     text-decoration: none; /* Suppression du soulignement du texte du lien */
 }
