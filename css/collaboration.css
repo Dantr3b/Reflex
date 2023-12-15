@@ -78,7 +78,6 @@ body {
     margin-top: 8%; /* Marge en haut du texte */
     margin-left: 10%; /* Marge à gauche du texte */
     color: white; /* Couleur du texte */
-    size: 2rem; /* Taille du texte (note: devrait probablement être 'font-size' au lieu de 'size') */
     z-index: 2;
 }
 
