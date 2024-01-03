@@ -1,0 +1,50 @@
+body {
+    font-family:Arial, Helvetica, sans-serif; /* Utilisation de la police personnalisée */
+    background-color: #3F3E3E;
+}
+
+/* Style pour la barre de navigation sombre */
+.navbar-dark {
+    position: relative;
+}
+
+/* Style pour la barre de navigation sombre fixée en haut */
+.navbar-dark.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styles CSS personnalisés pour l'effet de survol de la barre de navigation */
+.navbar-dark .navbar-nav {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}   
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Couleur blanche par défaut */
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 4rem;
+}
+
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+    /* Styles spécifiques pour la classe active ici */
+    color: #0D4;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #0D4; /* Couleur verte au survol */
+}
+
+main {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
