@@ -8,6 +8,7 @@ body {
     position: relative;
     width: 100%;
     z-index: 0;
+    
 }
 
 /* Style pour le conteneur avec l'image en arrière-plan */
@@ -21,6 +22,7 @@ body {
 /* Style pour la barre de navigation sombre */
 .navbar-dark {
     position: relative;
+    
 }
 
 /* Style pour la barre de navigation sombre fixée en haut */
@@ -34,7 +36,6 @@ body {
 /* Styles CSS personnalisés pour l'effet de survol de la barre de navigation */
 .navbar-dark .navbar-nav {
     position: relative;
-    height: 5rem;
     justify-content: center;
     align-items: center;
 }   
@@ -47,6 +48,7 @@ body {
     font-weight: 400;
     line-height: normal;
     margin-right: 4rem;
+    
 }
 
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
@@ -70,6 +72,7 @@ nav section {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    
 }
 
 /* Style pour la flèche vers le bas */
@@ -77,13 +80,14 @@ nav section {
     position: relative;
     margin-top: 10%;
     z-index: 1;
-    left: 45%;
-    left: 50%;
+    left: 40%;
     width: 15%;
 }
 
 /* Style pour les sections "h" et "g" avec une hauteur de 100vh et un padding de 20px */
 .h {
+    position: absolute;
+    z-index: 1000;
     height: 100vh;
     padding: 20px;
 }
@@ -102,14 +106,14 @@ nav section {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 500%;
+    font-size: 10vw;
     color: #fff;
 }
 
 /* Style pour les titres des sections "moto" et "voiture" avec un bordure inférieure */
 .title .moto h1 {
     color: #ffffff;
-    border-bottom: #0D4 solid 0.8rem;
+    border-bottom: #0D4 solid 1.5vw;
     border-radius: 2%;
 }
 
