@@ -99,6 +99,7 @@ body {
 /* Style pour la classe '.form3' */
 .form3 {
     position: absolute; /* Position absolue par rapport à son premier parent positionné */
+    bottom: 0;
     z-index: 1; /* Empilement en avant pour être au-dessus d'autres éléments */
     top: 177%; /* Distance par rapport au haut de l'écran (peut être ajusté selon les besoins) */
     left: 40%; /* Distance par rapport à la gauche de l'écran (peut être ajusté selon les besoins) */
