@@ -1,15 +1,15 @@
 
-.form-style input[type=reset],
-button {
-    background-color: #ff0000;
-    color: white;
-    font-size: 16%;
-    border-radius: 5px;
-    cursor: pointer;
-}
+  .form-style input[type=reset],
+  button {
+      background-color: #ff0000;
+      color: white;
+      font-size: 16%;
+      border-radius: 5px;
+      cursor: pointer;
+  }
 
-.form-style {
-    margin: auto;
+  .form-style {
+    margin-top: 30%;
     padding: 20px 12px 10px 20px;
     font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     display: flex;
@@ -18,148 +18,159 @@ button {
     background: #f2f2f2;
     font-size: auto;
     justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
     margin-top: 10%;
+    margin-left:38%;
 }
 
-.form-style td {
-    padding: 0;
-    display: block;
-    list-style: none;
-    margin: 10px 0 0 0;
-}
-
-.form-style label{
-    margin:0 0 3px 0;
-    padding:0px;
-    display:block;
-    font-weight: bold;
-}
-
-.form-style .required{
-    color:#00DD44;
-}
-
-.form-style input[type=reset], button{
-    background-color: #00DD44;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Style pour le survol du bouton */
-.form-style input[type=reset]:hover, button:hover {
-    background-color: #ff0000;
-}
-
-  .form-style input[type=submit]:hover, .form-style input[type=bodyInput]:hover{
-    background: #4eb5f1;
-    box-shadow:none;
-    -moz-box-shadow:none;
-    -webkit-box-shadow:none;
+  .form-style td {
+      padding: 0;
+      display: block;
+      list-style: none;
+      margin: 10px 0 0 0;
   }
-  .form-style .field-textarea{
-    height: 100px;
+  .form-style label{
+      margin:0 0 3px 0;
+      padding:0px;
+      display:block;
+      font-weight: bold;
   }
-  .form-style input[type=text], 
-  .form-style input[type=email],
-  textarea{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    border:1px solid #BEBEBE;
-    padding: 7px;
-    margin:0px;
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;  
+
+  .form-style .required{
+      color:#00DD44;
   }
-  .form-style .long{
+
+  .form-style input[type=reset], button{
+      background-color: #00DD44;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  /* Style pour le survol du bouton */
+  .form-style input[type=reset]:hover, button:hover {
+      background-color: #ff0000;
+  }
+
+    .form-style input[type=submit]:hover, .form-style input[type=bodyInput]:hover{
+      background: #4eb5f1;
+      box-shadow:none;
+      -moz-box-shadow:none;
+      -webkit-box-shadow:none;
+    }
+    .form-style .field-textarea{
+      height: 100px;
+    }
+    .form-style input[type=text], 
+    .form-style input[type=email],
+    textarea{
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      border:1px solid #BEBEBE;
+      padding: 7px;
+      margin:0px;
+      -webkit-transition: all 0.30s ease-in-out;
+      -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+      -o-transition: all 0.30s ease-in-out;
+      outline: none;  
+    }
+    .form-style .long{
+      width: 100%;
+    }
+    .form-style input[type=text]:focus, 
+    .form-style input[type=email]:focus,
+    .form-style textarea:focus{
+      -moz-box-shadow: 0 0 8px #88D5E9;
+      -webkit-box-shadow: 0 0 8px #88D5E9;
+      box-shadow: 0 0 8px #88D5E9;
+      border: 1px solid #88D5E9;
+    }
+    .error{
+      color: #00DD44;
+      background-color: #FFBABA;
+    }
+    
+
+  body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #595959;
+    
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    height: auto;
   }
-  .form-style input[type=text]:focus, 
-  .form-style input[type=email]:focus,
-  .form-style textarea:focus{
-    -moz-box-shadow: 0 0 8px #88D5E9;
-    -webkit-box-shadow: 0 0 8px #88D5E9;
-    box-shadow: 0 0 8px #88D5E9;
-    border: 1px solid #88D5E9;
+
+
+  /* Style pour le conteneur avec l'image en arrière-plan */
+  .conteneur {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    align-items: center;
   }
-  .error{
-    color: #00DD44;
-    background-color: #FFBABA;
+
+  /* Style pour la barre de navigation sombre */
+  .navbar-dark {
+    position: relative;
   }
-  
 
-body {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  background-color: #595959;
-}
+  /* Style pour la barre de navigation sombre fixée en haut */
+  .navbar-dark.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 
+  /* Styles CSS personnalisés pour l'effet de survol de la barre de navigation */
+  .navbar-dark .navbar-nav {
+    position: relative;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+  }   
 
-/* Style pour le conteneur avec l'image en arrière-plan */
-.conteneur {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  align-items: center;
-}
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Couleur blanche par défaut */
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 4rem;
+  }
 
-/* Style pour la barre de navigation sombre */
-.navbar-dark {
-  position: relative;
-}
+  .navbar-dark .navbar-nav .nav-item.active .nav-link {
+    /* Styles spécifiques pour la classe active ici */
+    color: #0D4;
+  }
 
-/* Style pour la barre de navigation sombre fixée en haut */
-.navbar-dark.fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #0D4; /* Couleur verte au survol */
+  }
 
-/* Styles CSS personnalisés pour l'effet de survol de la barre de navigation */
-.navbar-dark .navbar-nav {
-  position: relative;
-  height: 5rem;
-  justify-content: center;
-  align-items: center;
-}   
+  /* Style pour les titres h1 */
+  h1 {
+    color: #0D4; /* Couleur verte pour les titres h1 */
+  }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff; /* Couleur blanche par défaut */
-  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-right: 4rem;
-}
-
-.navbar-dark .navbar-nav .nav-item.active .nav-link {
-  /* Styles spécifiques pour la classe active ici */
-  color: #0D4;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #0D4; /* Couleur verte au survol */
-}
-
-/* Style pour les titres h1 */
-h1 {
-  color: #0D4; /* Couleur verte pour les titres h1 */
-}
-
-/* Style pour les sections de navigation */
-nav section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
+  /* Style pour les sections de navigation */
+  nav section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
