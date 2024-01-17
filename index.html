@@ -48,7 +48,7 @@
                     <a class="nav-link" href="rasso.html">Rasso</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#a">Contacte</a>
+                    <a class="nav-link" href="contact.html">Contacte</a>
                 </li>
             </ul>
         </div>
@@ -57,8 +57,6 @@
     <!-- Conteneur avec une image en arrière-plan -->
     <div class="conteneur">
         <img src="images/test2.png" alt="Description de l'image" class="ford">
-        <!-- <p class="texte-sur-image">Reflex</p> -->
-        <!-- <p class="texte-sur-image2">Pilot</p> -->
     </div>
 </section>
 
@@ -66,6 +64,7 @@
 <section id="g">
     <!-- Flèche vers le bas -->
     <div class="arow">
+        <!-- integration du svg de la fleche -->
         <svg xmlns="http://www.w3.org/2000/svg" width="77" height="48" viewBox="0 0 77 48" fill="none">
             <path d="M9.0475 0L38.5 29.668L67.9525 0L77 9.1336L38.5 48L0 9.1336L9.0475 0Z" fill="white"/>
         </svg>
@@ -74,22 +73,22 @@
     <!-- Titre avec deux catégories (Moto et Voiture) -->
     <div class="title">
         <div class="moto">
-            <h1 class="titremoto" onclick="toggleVisibility('moto')">Moto</h1>
+            <h1 class="titre" onclick="toggleVisibility('moto')">Moto</h1>
         </div>
         <div class="voiture">  
-            <h1 class="titremoto" onclick="toggleVisibility('voiture')">Voiture</h1>
+            <h1 class="titre" onclick="toggleVisibility('voiture')">Voiture</h1>
         </div>
     </div>
 
     <!-- Contenu pour la catégorie "Moto" -->
     <div class="motocontent">
         <div class="image-grid">
-            <img src="images/moto1.jpg" alt="Image 1">
-            <img src="images/moto2.jpg" alt="Image 2">
-            <img src="images/moto3.jpg" alt="Image 3">
-            <img src="images/moto4.jpg" alt="Image 4">
-            <img src="images/moto5.jpg" alt="Image 5">
-            <img src="images/moto6.jpg" alt="Image 6">
+            <img src="images/moto1.jpg" alt="motard dans un virage sur une moto rouge">
+            <img src="images/moto2.jpg" alt="motard face a une moto">
+            <img src="images/moto3.jpg" alt="homme a moto sur la roue arriere">
+            <img src="images/moto4.jpg" alt="pilote de motocross dans un virage">
+            <img src="images/moto5.jpg" alt="moto dans un tunnel">
+            <img src="images/moto6.jpg" alt="moto dans une foret">
         </div>
     </div>
 
@@ -97,24 +96,15 @@
     <div class="voiturecontent">
         <div class="image-grid">
             <!-- Lien vers une autre page pour la première image -->
-            <a href="pageimg1.html"><img src="images/voiture-1.jpg" alt="Image 1"></a>
-            <img src="images/voiture-2.jpg" alt="Image 2">
-            <img src="images/voiture-3.jpg" alt="Image 3">
-            <img src="images/voiture-4.jpg" alt="Image 4">
-            <img src="images/voiture-5.jpg" alt="Image 5">
-            <img src="images/voiture-6.jpg" alt="Image 6">
+            <a href="pageimg1.html"><img src="images/voiture-1.jpg" alt="bmw e30 blanche"></a>
+            <img src="images/voiture-2.jpg" alt="180sx street">
+            <img src="images/voiture-3.jpg" alt="350z street">
+            <img src="images/voiture-4.jpg" alt="ford ranger raptor">
+            <img src="images/voiture-5.jpg" alt="porshe gt3rs bleu">
+            <img src="images/voiture-6.jpg" alt="Renault 5 turbo">
         </div>
     </div>
 </section>
-
-<footer>
-    <iframe src="footer.html" width="100%"
-    height="600"
-    style="border: 0;"
-    allowfullscreen=""
-    loading="lazy">
-    </iframe>
-</footer>
 
 <!-- Scripts JavaScript et bibliothèques externes -->
 <script src="js/script.js"></script>

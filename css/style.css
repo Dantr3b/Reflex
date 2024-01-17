@@ -102,7 +102,7 @@ nav section {
 }
 
 /* Style pour les titres des catégories (moto et voiture) */
-.titremoto {
+.titre {
     display: flex;
     align-items: center;
     justify-content: center;
