@@ -1,0 +1,154 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    width: 15px; /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+background: #353535; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #5c5b5b; /* color of the scroll thumb */
+border-radius: 20px; /* roundness of the scroll thumb */
+border: 3px solid #353535; /* creates padding around scroll thumb */
+}
+
+
+img {
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Ajoutez cette règle pour supprimer les marges des divs autour des images */
+.l1,
+.top,
+.l2,
+.l3,
+.l4 {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.l1 img, .l2 img{
+    max-width: 50%;
+    height: auto;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.l4 img{
+    max-width: 33.33%;
+    height: auto;
+}
+
+
+
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #262626;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer #logoReflextFooter {
+    padding:5%;
+    max-width: 20%;
+    height: auto;
+    margin-right: 5%;
+}
+
+footer .contact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 0;
+}
+
+footer h1{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+}
+footer p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+}
+
+footer .contact hr{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+}
+footer .resaux{
+    display: flex;
+    align-items: center;
+}
+footer .resaux p{
+    margin-left: 2%;
+}
+
+footer .contact img{
+    max-width: 3%;
+    height: auto;
+}
+
+footer .newletter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0;
+}
+
+footer .newletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+footer .newletter input[type='text']{
+    background-color: #262626;
+    border: none; /* Supprimez les bordures par défaut */
+    border-bottom: 1px solid #FFFFFF5E; /* Ajoutez une bordure en bas */
+    outline: none;
+    color: #FFFFFF5E; /* Changez la couleur du texte */
+    padding-bottom: 5%;
+    max-width: 75%;
+}
+
+footer .newletter input[type='submit']{
+    color: #ffffff;
+    background-color: #39b44a;
+    font-size: 1.5rem;
+    border: 1px solid #39b44a;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    max-width: 65%;
+}
