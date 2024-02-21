@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     /* Additional styles for your content */
     
 }
@@ -37,6 +38,7 @@ nav {
     display: flex;
     justify-content: flex-start; /* Aligner les logos à gauche */
     align-items: center; /* Centre la navigation verticalement */
+    margin-right: 15%;
 }
 
 .logo-list, .nav-list {
@@ -45,9 +47,9 @@ nav {
     padding: 0;
 }
 
-.logo-list li, .nav-list li {
+.nav-list li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10rem;
 }
 
 .logo-list li:last-child, .nav-list li:last-child {
@@ -59,10 +61,14 @@ nav ul li a {
     text-decoration: none; 
 }
 
+.logo-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
 .fa-instagram, .fa-tiktok {
     color: white;
     font-size: 100%;
-    margin-right: 5px;
 }
 
 
