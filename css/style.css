@@ -90,6 +90,7 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: auto; /* Push the footer to the bottom */
+    width: 100%;
 }
 
 #logoReflextFooter {
@@ -149,12 +150,14 @@ p{
     flex-direction: column;
     text-align: left;
     margin-left: 0;
+    max-width: 100%;
 }
 
 .newletter form{
     display: flex;
     flex-direction: column;
     align-items: left;
+    max-width: 100%;
 }
 
 .newletter input[type='text']{
@@ -165,6 +168,9 @@ p{
     color: #FFFFFF5E; /* Changez la couleur du texte */
     padding-bottom: 5%;
     max-width: 75%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    max-width: 100%;
 }
 
 .newletter input[type='submit']{
