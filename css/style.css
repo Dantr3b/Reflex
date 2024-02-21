@@ -24,21 +24,20 @@ header {
 
 .header2 {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 2% 0; /* Ajuster le padding vertical et supprimer le padding horizontal */
-    text-align: center;
+    padding: 2%; /* Ajuster le padding vertical et supprimer le padding horizontal */
 }
 
 nav {
     width: 100%;
     display: flex;
-    justify-content: center; /* Centre la navigation horizontalement */
+    justify-content: space-between;
 }
 
 .logo-container {
     display: flex;
     justify-content: flex-start; /* Aligner les logos à gauche */
     align-items: center; /* Centre la navigation verticalement */
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
 .logo-list, .nav-list {
@@ -46,15 +45,33 @@ nav {
     margin: 0;
     padding: 0;
 }
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
 
 .nav-list li {
     display: inline-block;
-    margin-right: 10rem;
+    gap: 50px;
+    flex-grow: 1;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .logo-list li:last-child, .nav-list li:last-child {
     margin-right: 0;
 }
+
+
 
 nav ul li a {
     color: white; 
@@ -71,9 +88,18 @@ nav ul li a {
     font-size: 100%;
 }
 
+.button-container {
+    margin-left: 20px; /* Espace entre la liste et le bouton (ajustez selon vos besoins) */
+}
 
-
-
+.green-button {
+    background-color:rgb(95, 178, 87);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
 
@@ -184,15 +210,3 @@ p{
     max-width: 65%;
 }
 
-.button-container {
-    margin-left: auto; /* Aligner le conteneur du bouton à droite */
-}
-
-.green-button {
-    background-color:rgb(95, 178, 87);
-    color: white;
-    padding-left: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
