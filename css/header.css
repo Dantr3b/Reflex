@@ -1,0 +1,90 @@
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+.LOGO {
+    width: 40%;
+    height: auto;
+    margin: auto; 
+    display: block; 
+    padding: 2% 0; /* Ajuster le padding vertical et supprimer le padding horizontal */
+}
+
+.header2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%; /* Ajuster le padding vertical et supprimer le padding horizontal */
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; /* Aligner les logos à gauche */
+    align-items: center; /* Centre la navigation verticalement */
+    margin-right: 10%;
+}
+
+.logo-list, .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.nav-list li {
+    display: inline-block;
+    gap: 50px;
+    flex-grow: 1;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo-list li:last-child, .nav-list li:last-child {
+    margin-right: 0;
+}
+
+
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.logo-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.fa-instagram, .fa-tiktok {
+    color: white;
+    font-size: 100%;
+}
+
+.button-container {
+    margin-left: 20px; /* Espace entre la liste et le bouton (ajustez selon vos besoins) */
+}
+
+.green-button {
+    background-color:rgb(95, 178, 87);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

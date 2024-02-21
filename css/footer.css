@@ -1,0 +1,109 @@
+
+
+
+
+/* Style your content as needed */
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #262626;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%;
+}
+
+#logoReflextFooter {
+    padding:5%;
+    max-width: 20%;
+    height: auto;
+    margin-right: 5%;
+}
+
+.contact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 0;
+}
+
+h1{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+}
+p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+}
+
+.contact hr{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+}
+.resaux{
+    display: flex;
+    align-items: center;
+}
+.resaux p{
+    margin-left: 2%;
+}
+
+.contact img{
+    max-width: 3%;
+    height: auto;
+}
+
+.newletter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+.newletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 100%;
+}
+
+.newletter input[type='text']{
+    background-color: #262626;
+    border: none; /* Supprimez les bordures par défaut */
+    border-bottom: 1px solid #FFFFFF5E; /* Ajoutez une bordure en bas */
+    outline: none;
+    color: #FFFFFF5E; /* Changez la couleur du texte */
+    padding-bottom: 5%;
+    max-width: 75%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    max-width: 100%;
+}
+
+.newletter input[type='submit']{
+    color: #ffffff;
+    background-color: #39b44a;
+    font-size: 1.5rem;
+    border: 1px solid #39b44a;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    max-width: 65%;
+}
+
