@@ -19,7 +19,6 @@ body {
 /* Styles CSS personnalisés pour l'effet de survol de la barre de navigation */
 .navbar-dark .navbar-nav {
     position: relative;
-    height: 5rem;
     justify-content: center;
     align-items: center;
 }   
