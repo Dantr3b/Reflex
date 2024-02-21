@@ -184,3 +184,15 @@ p{
     max-width: 65%;
 }
 
+.button-container {
+    margin-left: auto; /* Aligner le conteneur du bouton à droite */
+}
+
+.green-button {
+    background-color:rgb(95, 178, 87);
+    color: white;
+    padding-left: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
