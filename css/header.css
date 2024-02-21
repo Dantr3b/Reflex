@@ -13,9 +13,10 @@ header {
 .header2 {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2%; /* Ajuster le padding vertical et supprimer le padding horizontal */
-    z-index: 10;
-    position:absolute;
-    width: 95%;
+    position: absolute; /* Position absolue par rapport à l'élément parent (header) */
+
+    left: 0; /* Aligner à gauche */
+    right: 0; /* Aligner à droite */
 }
 
 nav {
