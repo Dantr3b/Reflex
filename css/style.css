@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -19,14 +21,76 @@ border: 3px solid #353535; /* creates padding around scroll thumb */
 }
 
 
-img {
+.top {
     max-width: 100%;
     margin: 0;
 }
 
 .arrow {
     position: relative;
+    width: 5%;
+    margin-top: 3%;
     top: 80%;
     left: 50%;
     transform: translate(-50%);
+}
+
+.titre {
+    text-align: center;
+}
+
+
+.title{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 3vw;
+    letter-spacing: 0em;
+}
+
+.hrtitle{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.ptext{
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.8vw;
+    font-weight: 100;
+    line-height: 2vw;
+    letter-spacing: 0.2vw;
+    text-align: justify;
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.image-millieudepage{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.image-millieudepage img{
+    width: 47%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.botom{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.screeninsta{
+    width: 90%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
