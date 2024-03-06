@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/conctact.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -36,31 +36,43 @@
             </div>
         </nav>
     </div>
+    <main>
+        <img src="image/MotoAvecVue.jpeg" alt="MotoAvecVue" class="top">
 
-
-
-    <div class="top">
-        <img src="image/106.png" alt="106">
-    </div>
-    <div class="main">
-        <div class="l1">
-            <img src="image/306.png" alt="306">
-            <div class="text" id="l1">Incroyable le bolide</div>
-        </div>
-        <div class="l2">
-            <div class="text" id="l2">Mama l'auto</div>
-            <img src="image/civic.png" alt="civic" loading="lazy">
-        </div>
-        <div class="l3">
-            <img src="image/306AvecLeSoleilZebi.png" alt="306AvecLeSoleilZebi" loading="lazy">
-        </div>
-        <div class="l4">
-            <img src="image/clio2TahLesFou.png" alt="clio2grise" loading="lazy">
-            <img src="image/SaCestDeLaBiciclette.png" alt="biclette de competition" loading="lazy">
-            <img src="image/AutoDuSeigneur.png" alt="Voiture Blanche" loading="lazy">
-        </div>
-    </div>
-
+        <form name="myForm" id="emailLink" action="mailto:reflex.pilot@gmail.com?subject=This%20is%20the%20subject&body=This%20is%20the%20body" onsubmit="return validateForm()" method="post">
+            <table class="form-style">
+            <tr>
+                <td>
+                    <label for="NameInput">
+                        Votre nom <span class="required">*</span>
+                    </label>
+                    <input type="text" id="NameInput" oninput="updateEmailLink()">
+                    <span class="error" id="errorname"></span>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    <label for="bodyInput">
+                        Message <span class="required">*</span>
+                    </label>
+                </td>
+                <td>
+                    <textarea id="bodyInput" oninput="updateEmailLink()"></textarea>
+                    <span class="error" id="errormsg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button id="emailLink" onclick="sendEmail()">Envoyer</button>     
+                    <input type="reset" value="Réinitialiser"> 
+                </td>
+            </tr>
+            </table>
+        </form>
+    </main>
 
     <footer>
         <img id="logoReflextFooter" src="image/ReflexPolilotLogoFooter.png">
@@ -82,5 +94,7 @@
             </form>
         </div>
     </footer>
+
+
 </body>
 </html>

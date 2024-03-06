@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+img{
+    margin-top: 8%;
+    width: 50%;
+    height: auto;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+}
+
+#emailLink{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 50%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    justify-content: center;
+}
+
+#emailLink table{
+    border: 1px solid rgb(95, 178, 87);
+    border-radius: 10px;
+}
+tr{
+    display: flex;
+}
