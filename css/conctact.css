@@ -15,8 +15,8 @@ main{
 }
 
 #emailLink{
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: flex;
     width: 50%;
     padding-top: 10%;
@@ -27,7 +27,14 @@ main{
 #emailLink table{
     border: 1px solid rgb(95, 178, 87);
     border-radius: 10px;
+    padding: 15%;
+
 }
 tr{
     display: flex;
+}
+
+.contacter{
+   
+   
 }
