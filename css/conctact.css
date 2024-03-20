@@ -36,7 +36,7 @@ main{
     margin-bottom: 10%;
 }
 
-.resaux{
+main .resaux{
     width: 50%;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ h2{
     letter-spacing: 0em;
 }
 
-.resaux img{
+main .resaux img{
     max-width: 10%;
     height: auto;
     margin-left: 5%;
@@ -62,7 +62,7 @@ h2{
     width: 50%;
 }
 
-form{
+main form{
     width: 60%;
     display: flex;
     justify-content: center;
@@ -70,7 +70,7 @@ form{
     margin-left: 10%;
 }
 
-form input{
+main form input{
     background-color: black;
     border: 0;
     width: 100%;
@@ -79,7 +79,7 @@ form input{
     border-bottom: 1px solid white;
     color: white;
 }
-form textarea{
+main form textarea{
     background-color: black;
     border: 0;
     margin-top: 2%;
@@ -90,13 +90,13 @@ form textarea{
 
 /* Style de la checkbox */
 /* Style de la checkbox */
-input[type="checkbox"] {
+main input[type="checkbox"] {
     margin-top: 5%;
     display: none; /* Cache la case à cocher par défaut */
   }
   
   /* Style du label */
-  label {
+  main label {
     color: white;
     display: inline-block; /* Permet d'appliquer des styles sur le label */
     padding-left: 25px; /* Espace pour le remplacement de la checkbox */
@@ -105,7 +105,7 @@ input[type="checkbox"] {
   }
   
   /* Style de la checkbox personnalisée */
-  label:before {
+  main label:before {
     content: "";
     display: inline-block;
     width: 16px;
@@ -118,12 +118,12 @@ input[type="checkbox"] {
   }
   
   /* Style de la checkbox cochée */
-  input[type="checkbox"]:checked + label:before {
+  main input[type="checkbox"]:checked + label:before {
     background-color: black; /* Couleur de fond de la checkbox cochée */
   }
   
   /* Style du symbole de coche */
-  label:after {
+  main label:after {
     content: "\2714"; /* Code unicode pour le symbole de coche */
     font-size: 14px; /* Taille de la police */
     color: white; /* Couleur du symbole */
@@ -134,7 +134,7 @@ input[type="checkbox"] {
   }
   
   /* Affiche le symbole lorsque la checkbox est cochée */
-  input[type="checkbox"]:checked + label:after {
+  main input[type="checkbox"]:checked + label:after {
     visibility: visible;
   }
   
@@ -147,7 +147,7 @@ input[type="checkbox"] {
     
 }
 
-form input[type="submit"]{
+main form input[type="submit"]{
     margin-top: 10%;
     border: 1px solid #ffffff;
     width: 30%;
