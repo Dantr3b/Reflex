@@ -1,40 +1,155 @@
 body{
     margin: 0;
     background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
-img{
-    margin-top: 8%;
-    width: 50%;
-    height: auto;
+#top{
+    margin-top: 10%;
+    text-align: center;
+    width: 40%;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 4vw;
+    color: white;
+    font-weight: 600;
+    line-height: 3vw;
+    letter-spacing: 0em;
+}
+
+#vert{
+    margin-left: 2%;
+    color:#39B44A
 }
 
 main{
     display: flex;
-    height: 100vh;
-}
-
-#emailLink{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    display: flex;
-    width: 50%;
-    padding-top: 10%;
-    padding-bottom: 10%;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10%;
 }
 
-#emailLink table{
-    border: 1px solid rgb(95, 178, 87);
-    border-radius: 10px;
-    padding: 15%;
-
-}
-tr{
+.resaux{
+    width: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.contacter{
-   
-   
+h2{
+    color: white;
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.resaux img{
+    max-width: 10%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.formulaire{
+    width: 50%;
+}
+
+form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+form input{
+    background-color: black;
+    border: 0;
+    width: 100%;
+    height: 30px;
+    margin-top: 2%;
+    border-bottom: 1px solid white;
+    color: white;
+}
+form textarea{
+    background-color: black;
+    border: 0;
+    margin-top: 2%;
+    border-bottom: 1px solid white;
+    resize: none;
+    color: white;
+}
+
+/* Style de la checkbox */
+/* Style de la checkbox */
+input[type="checkbox"] {
+    margin-top: 5%;
+    display: none; /* Cache la case à cocher par défaut */
+  }
+  
+  /* Style du label */
+  label {
+    color: white;
+    display: inline-block; /* Permet d'appliquer des styles sur le label */
+    padding-left: 25px; /* Espace pour le remplacement de la checkbox */
+    position: relative;
+    cursor: pointer; /* Change le curseur lorsque survolé */
+  }
+  
+  /* Style de la checkbox personnalisée */
+  label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: black; /* Couleur de fond de la checkbox */
+    border: 0.5px solid white; /* Bordure blanche */
+    position: absolute;
+    left: 0;
+    top: 1px;
+  }
+  
+  /* Style de la checkbox cochée */
+  input[type="checkbox"]:checked + label:before {
+    background-color: black; /* Couleur de fond de la checkbox cochée */
+  }
+  
+  /* Style du symbole de coche */
+  label:after {
+    content: "\2714"; /* Code unicode pour le symbole de coche */
+    font-size: 14px; /* Taille de la police */
+    color: white; /* Couleur du symbole */
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    visibility: hidden; /* Cache le symbole par défaut */
+  }
+  
+  /* Affiche le symbole lorsque la checkbox est cochée */
+  input[type="checkbox"]:checked + label:after {
+    visibility: visible;
+  }
+  
+  
+
+#formcheck{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    
+}
+
+form input[type="submit"]{
+    margin-top: 10%;
+    border: 1px solid #ffffff;
+    width: 30%;
+    cursor: pointer;
 }
