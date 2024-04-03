@@ -40,7 +40,7 @@
     <div class="titre"><h1>TRAVAILLONS</h1><h1 id="vert"> ENSEMBLE</h1></div>
     <main>
         <div class="resaux">
-            <h2>reflet.pilot@gmail.com</h2>
+            <h2>reflex.pilot@gmail.com</h2>
             <h2>+33 6 66 66 66 66</h2>
             <div class="lien">
                 <a href="https://www.instagram.com/reflex_pilot/"><img src="image/instaLogoFooter.png"></a>
@@ -49,16 +49,16 @@
         </div>
 
         <div class="formulaire">
-            <form action="sendmail()">
-                <input type="text" placeholder="Nom">
-                <input type="text" placeholder="Adresse mail">
-                <input type="text" placeholder="Sujet">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <form>
+                <input type="text" id="NameInput" placeholder="Nom">
+                <input type="text" id="EmailInput" placeholder="Adresse mail">
+                <input type="text" id="SubjetInput" placeholder="Sujet">
+                <textarea name="message" id="bodyInput" cols="30" rows="10" placeholder="Message"></textarea>
                 <checkbox id="formcheck">
                     <input type="checkbox" name="newsletter" id="newsletter">
                     <label for="newsletter">Je souhaite m'inscrire à la newsletter</label>
                 </checkbox>
-                <input type="submit" value="Envoyer">
+                <input type="submit" onclick="updateEmailLink()" value="Envoyer">
             </form>
 
         </div>
@@ -94,6 +94,6 @@
         </div>
     </footer>
 
-
+<script src="js/contact.js"></script>
 </body>
 </html>

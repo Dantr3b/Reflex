@@ -4,10 +4,13 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-#top{
+hr{
     margin-top: 10%;
     text-align: center;
     width: 40%;
+}
+#actif a{
+    color:#39B44A;
 }
 
 .titre{

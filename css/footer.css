@@ -93,7 +93,6 @@ footer .newletter {
     background-color: #39b44a;
     font-size: 1vw; /* Réduisez la taille de la police du bouton */
     border: 1px solid #39b44a;
-    border-radius: 5px;
     padding: 0.5rem 1rem; /* Réduisez légèrement le rembourrage du bouton */
     cursor: pointer;
     width: 50%; /* Utilisez une largeur relative */
@@ -104,3 +103,4 @@ footer .newletter {
 .newletter input[type='text']::placeholder {
     font-size: 1vw; /* Définissez la taille du texte du placeholder */
 }
+
