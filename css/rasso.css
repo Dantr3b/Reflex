@@ -31,7 +31,6 @@ iframe{
     height: 100%;
 
 }
-
-.title{
-    text-align: center;
+#actif a{
+    color:#39B44A;
 }
