@@ -106,6 +106,10 @@ main input[type="checkbox"] {
     position: relative;
     cursor: pointer; /* Change le curseur lorsque survolé */
   }
+
+#labelNewslater{
+    font-size: 1.5vw;
+}
   
   /* Style de la checkbox personnalisée */
   main label:before {
@@ -155,4 +159,19 @@ main form input[type="submit"]{
     border: 1px solid #ffffff;
     width: 30%;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px){
+    main{
+        flex-direction: column;
+    }
+
+    main form input[type="submit"]{
+        width: 40%;
+    }
+    
+    #labelNewslater{
+        font-size: 2vw;
+    }
 }

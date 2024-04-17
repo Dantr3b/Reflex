@@ -30,8 +30,8 @@ footer .contact {
     margin-top: 3%;
 }
 
-h1,
-p {
+footer h1,
+footer p {
     color: white;
     font-weight: 600;
     line-height: 19px;
